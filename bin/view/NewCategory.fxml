@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NewCategoryController">
+   <children>
+      <Label fx:id="categoryDisplayLabel" alignment="CENTER" prefHeight="122.0" prefWidth="402.0" text="No category defined yet.">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="categoryNameLabel" alignment="CENTER" prefHeight="31.0" prefWidth="300.0" promptText="Enter category name">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </VBox.margin></TextField>
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#addCategory" prefHeight="92.0" prefWidth="198.0" text="Add new category">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Button>
+   </children>
+</VBox>
